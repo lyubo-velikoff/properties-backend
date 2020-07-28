@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
             // define association here
             // PropertyPhoto.belongsTo(models.Photo)
-            PropertyPhoto.belongsTo(models.Property)
+            // PropertyPhoto.belongsTo(models.Property) //TODO: Sort out this association
         }
     };
     PropertyPhoto.init({
