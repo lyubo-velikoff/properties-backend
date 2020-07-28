@@ -23,7 +23,8 @@
         "supertest": "^4.0.2"
     },
     "scripts": {
-        "start": "nodemon server.js",
+        "start": "node server.js",
+        "local-start": "nodemon server.js",
         "migrate": "node_modules\\.bin\\sequelize-cli db:migrate",
         "migrate:reset": "node_modules\\.bin\\sequelize-cli db:migrate:undo:all && npm run migrate",
         "seed": "node_modules\\.bin\\sequelize-cli db:seed:all",
