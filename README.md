@@ -2,6 +2,8 @@
 
 Node JS backend using express, express-validator, sequelize, sequelize-cli and jest
 
+![Node.js CI](https://github.com/lyubo-velikoff/properties-backend/workflows/Node.js%20CI/badge.svg)
+
 ## How to run
 
 1. Install dependencies
