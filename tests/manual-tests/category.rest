@@ -3,7 +3,7 @@ GET {{baseUrl}}/api/categories?page=0&size=10 HTTP/1.1
 content-type: application/json
 
 ### Category by ID ###
-GET {{baseUrl}}/api/categories/17 HTTP/1.1
+GET {{baseUrl}}/api/categories/19 HTTP/1.1
 content-type: application/json
 
 ### Add Category ###
@@ -15,11 +15,11 @@ content-type: application/json
 }
 
 ### Update Category ###
-PUT {{baseUrl}}/api/categories/17 HTTP/1.1
+PUT {{baseUrl}}/api/categories/19 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Category name here updated"
+    "name": "Category name here updated 2"
 }
 
 ### Delete Category ###

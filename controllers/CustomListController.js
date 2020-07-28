@@ -39,14 +39,14 @@ exports.update = (req, res) => {
     const Model = db[req.modelName]
     const { name } = req.body
     Model.update({ name }, { where : { id: req.params.id } })
-        .then(data => res.json({ result: data == 1 ? 'Success' : 'failed' }))
+        .then(() => this.findOne(req, res))
         .catch(err => handleError(err, res))
 }
 
 exports.delete = (req, res) => {
     const Model = db[req.modelName]
     Model.destroy({ where : { id: req.params.id } })
-        .then(data => res.json({ result: data == 1 ? 'Success' : 'failed' }))
+        .then(data => res.json({ result: data == 1 ? 'Deleted' : 'failed' }))
         .catch(err => handleError(err, res))
 }
 
