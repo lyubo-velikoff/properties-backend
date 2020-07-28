@@ -14,7 +14,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'property',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -26,7 +25,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'photo',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },

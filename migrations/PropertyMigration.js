@@ -41,7 +41,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'currency',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -54,7 +53,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'county',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -67,7 +65,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'region',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -80,7 +77,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'neighborhood',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -93,7 +89,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'floor',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -106,7 +101,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'floorCount',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -119,7 +113,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'constructionType',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -132,7 +125,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'detail',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },
@@ -145,7 +137,6 @@ module.exports = {
                 references: {
                     model: {
                         tableName: 'detailPlot',
-                        schema: 'avalon'
                     },
                     key: 'id'
                 },

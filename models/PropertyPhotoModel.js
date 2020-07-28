@@ -22,7 +22,6 @@ module.exports = (sequelize, DataTypes) => {
             references: {
                 model: {
                     tableName: 'property',
-                    schema: 'avalon'
                 },
                 key: 'id'
             },
@@ -34,7 +33,6 @@ module.exports = (sequelize, DataTypes) => {
             references: {
                 model: {
                     tableName: 'photo',
-                    schema: 'avalon'
                 },
                 key: 'id'
             },
