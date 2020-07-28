@@ -1,3 +1,5 @@
+require('dotenv').config('.env')
+console.log('here')
 const express = require('express')
 const bodyParser = require('body-parser')
 const IndexRouter = require('./routes/index')

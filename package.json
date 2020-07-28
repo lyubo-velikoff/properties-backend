@@ -6,6 +6,7 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
         "eslint": "^7.5.0",
         "eslint-formatter-pretty": "^4.0.0",
         "express": "^4.17.1",
@@ -22,21 +23,19 @@
         "supertest": "^4.0.2"
     },
     "scripts": {
-        "start": "node server.js",
-        "local:start": "cross-env NODE_ENV=local nodemon server.js",
-        "migrate": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:migrate",
-        "migrate:reset": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:migrate:undo:all && npm run migrate",
-        "seed": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:seed:all",
-        "seed:reset": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:seed:undo:all && npm run seed",
-        "dev:migrate": "cross-env NODE_ENV=development node_modules\\.bin\\sequelize-cli db:migrate",
-        "dev:migrate:reset": "cross-env NODE_ENV=development node_modules\\.bin\\sequelize-cli db:migrate:undo:all && npm run dev:migrate",
-        "dev:seed": "cross-env NODE_ENV=development node_modules\\.bin\\sequelize-cli db:seed:all",
-        "dev:seed:reset": "cross-env NODE_ENV=development node_modules\\.bin\\sequelize-cli db:seed:undo:all && npm run dev:seed",
+        "start": "nodemon server.js",
+        "migrate": "node_modules\\.bin\\sequelize-cli db:migrate",
+        "migrate:reset": "node_modules\\.bin\\sequelize-cli db:migrate:undo:all && npm run migrate",
+        "seed": "node_modules\\.bin\\sequelize-cli db:seed:all",
+        "seed:reset": "node_modules\\.bin\\sequelize-cli db:seed:undo:all && npm run seed",
         "quick-test": "cross-env NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles",
         "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles",
         "pretest": "cross-env NODE_ENV=test npm run migrate:reset"
     },
     "jest": {
+        "setupFiles": [
+            "dotenv/config"
+        ],
         "testEnvironment": "node",
         "coveragePathIgnorePatterns": [
             "/node_modules/",
