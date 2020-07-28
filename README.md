@@ -23,6 +23,15 @@ node app
 // if no errors your server is listening at 3001 (or depending what u configured in .env)
 ```
 
+.env example
+```
+PORT=3001
+DB_HOST=127.0.0.1
+DB_USERNAME=root
+DB_PASSWORD=
+DB_DATABASE=avalon
+```
+
 ## Sequelize cli commands
 
 Run migration
