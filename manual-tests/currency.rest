@@ -1,0 +1,27 @@
+### Currency ###
+GET {{baseUrl}}/api/currencies?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Currency by ID ###
+GET {{baseUrl}}/api/currencies/3 HTTP/1.1
+content-type: application/json
+
+### Add Currency ###
+POST {{baseUrl}}/api/currencies HTTP/1.1
+content-type: application/json
+
+{
+    "sign": "Currency sign here"
+}
+
+### Update Currency ###
+PUT {{baseUrl}}/api/currencies/3 HTTP/1.1
+content-type: application/json
+
+{
+    "sign": "Currency sign here updated"
+}
+
+### Delete Currency ###
+DELETE {{baseUrl}}/api/currencies/3 HTTP/1.1
+content-type: application/json

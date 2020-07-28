@@ -1,0 +1,27 @@
+### Region ###
+GET {{baseUrl}}/api/regions?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Region by ID ###
+GET {{baseUrl}}/api/regions/84 HTTP/1.1
+content-type: application/json
+
+### Add Region ###
+POST {{baseUrl}}/api/regions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Region name here"
+}
+
+### Update Region ###
+PUT {{baseUrl}}/api/regions/84 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Region name here updated"
+}
+
+### Delete Region ###
+DELETE {{baseUrl}}/api/regions/84 HTTP/1.1
+content-type: application/json

@@ -1,0 +1,27 @@
+### Furnished  ###
+GET {{baseUrl}}/api/furnished?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Furnished  by ID ###
+GET {{baseUrl}}/api/furnished/4 HTTP/1.1
+content-type: application/json
+
+### Add Furnished  ###
+POST {{baseUrl}}/api/furnished HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Furnished name here"
+}
+
+### Update Furnished  ###
+PUT {{baseUrl}}/api/furnished/4 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Furnished name here updated"
+}
+
+### Delete Furnished  ###
+DELETE {{baseUrl}}/api/furnished/4 HTTP/1.1
+content-type: application/json

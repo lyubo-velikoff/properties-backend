@@ -1,0 +1,27 @@
+### Floor ###
+GET {{baseUrl}}/api/floors?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Floor by ID ###
+GET {{baseUrl}}/api/floors/20 HTTP/1.1
+content-type: application/json
+
+### Add Floor ###
+POST {{baseUrl}}/api/floors HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Floor name here"
+}
+
+### Update Floor ###
+PUT {{baseUrl}}/api/floors/20 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Floor name here updated"
+}
+
+### Delete Floor ###
+DELETE {{baseUrl}}/api/floors/20 HTTP/1.1
+content-type: application/json

@@ -1,0 +1,27 @@
+### Neighborhood ###
+GET {{baseUrl}}/api/neighborhoods?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Neighborhood by ID ###
+GET {{baseUrl}}/api/neighborhoods/51 HTTP/1.1
+content-type: application/json
+
+### Add Neighborhood ###
+POST {{baseUrl}}/api/neighborhoods HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Neighborhood name here"
+}
+
+### Update Neighborhood ###
+PUT {{baseUrl}}/api/neighborhoods/51 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Neighborhood name here updated"
+}
+
+### Delete Neighborhood ###
+DELETE {{baseUrl}}/api/neighborhoods/51 HTTP/1.1
+content-type: application/json

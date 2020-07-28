@@ -1,0 +1,36 @@
+### Photos ###
+GET {{baseUrl}}/api/photos?page=0&size=2 HTTP/1.1
+content-type: application/json
+
+### Photos by ID ###
+GET {{baseUrl}}/api/photos/3 HTTP/1.1
+content-type: application/json
+
+### Add Photo ###
+POST {{baseUrl}}/api/photos HTTP/1.1
+content-type: application/json
+
+{
+    "url": "https://vestnorden.com/wp-content/uploads/2018/03/house-placeholder.png"
+}
+
+### TODO: Move this inside property Assign Photo to Property ###
+POST {{baseUrl}}/api/photos/assign HTTP/1.1
+content-type: application/json
+
+{
+    "photoId": 3,
+    "propertyId": 1
+}
+
+### Update Photo ###
+PUT {{baseUrl}}/api/photos/3 HTTP/1.1
+content-type: application/json
+
+{
+    "url": "some text update"
+}
+
+### Delete Photo ###
+DELETE {{baseUrl}}/api/photos/3 HTTP/1.1
+content-type: application/json

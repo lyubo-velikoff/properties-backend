@@ -1,0 +1,27 @@
+### Floor Count ###
+GET {{baseUrl}}/api/floorsCount?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Floor Count by ID ###
+GET {{baseUrl}}/api/floorsCount/19 HTTP/1.1
+content-type: application/json
+
+### Add Floor Count ###
+POST {{baseUrl}}/api/floorsCount HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Floor Count name here"
+}
+
+### Update Floor Count ###
+PUT {{baseUrl}}/api/floorsCount/19 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Floor Count name here updated"
+}
+
+### Delete Floor Count ###
+DELETE {{baseUrl}}/api/floorsCount/19 HTTP/1.1
+content-type: application/json

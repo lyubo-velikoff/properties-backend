@@ -1,0 +1,27 @@
+### County ###
+GET {{baseUrl}}/api/counties?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### County by ID ###
+GET {{baseUrl}}/api/counties/3 HTTP/1.1
+content-type: application/json
+
+### Add County ###
+POST {{baseUrl}}/api/counties HTTP/1.1
+content-type: application/json
+
+{
+    "name": "County name here"
+}
+
+### Update County ###
+PUT {{baseUrl}}/api/counties/3 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "County name here updated"
+}
+
+### Delete County ###
+DELETE {{baseUrl}}/api/counties/3 HTTP/1.1
+content-type: application/json

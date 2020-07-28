@@ -1,0 +1,27 @@
+### Detail ###
+GET {{baseUrl}}/api/details?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Detail by ID ###
+GET {{baseUrl}}/api/details/15 HTTP/1.1
+content-type: application/json
+
+### Add Detail ###
+POST {{baseUrl}}/api/details HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Detail name here"
+}
+
+### Update Detail ###
+PUT {{baseUrl}}/api/details/15 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Detail name here updated"
+}
+
+### Delete Detail ###
+DELETE {{baseUrl}}/api/details/15 HTTP/1.1
+content-type: application/json

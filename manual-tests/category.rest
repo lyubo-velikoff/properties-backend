@@ -1,0 +1,27 @@
+### Category ###
+GET {{baseUrl}}/api/categories?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Category by ID ###
+GET {{baseUrl}}/api/categories/17 HTTP/1.1
+content-type: application/json
+
+### Add Category ###
+POST {{baseUrl}}/api/categories HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Category name here"
+}
+
+### Update Category ###
+PUT {{baseUrl}}/api/categories/17 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Category name here updated"
+}
+
+### Delete Category ###
+DELETE {{baseUrl}}/api/categories/17 HTTP/1.1
+content-type: application/json

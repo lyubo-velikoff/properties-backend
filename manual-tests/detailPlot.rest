@@ -1,0 +1,27 @@
+### Detail Plot ###
+GET {{baseUrl}}/api/detailsPlot?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Detail Plot by ID ###
+GET {{baseUrl}}/api/detailsPlot/6 HTTP/1.1
+content-type: application/json
+
+### Add Detail Plot ###
+POST {{baseUrl}}/api/detailsPlot HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Detail Plot name here"
+}
+
+### Update Detail Plot ###
+PUT {{baseUrl}}/api/detailsPlot/6 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Detail Plot name here updated"
+}
+
+### Delete Detail Plot ###
+DELETE {{baseUrl}}/api/detailsPlot/6 HTTP/1.1
+content-type: application/json

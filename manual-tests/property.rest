@@ -1,0 +1,39 @@
+### Property ###
+GET {{baseUrl}}/api/properties?page=0&size=2 HTTP/1.1
+content-type: application/json
+
+### Property by ID ###
+GET {{baseUrl}}/api/properties/13 HTTP/1.1
+content-type: application/json
+
+### Add Property ###
+POST {{baseUrl}}/api/properties HTTP/1.1
+content-type: application/json
+
+{
+    "title": "3- стаен, Център, 730лв",
+    "description": "Some description",
+    "price": 730,
+    "area": 500,
+    "yard": 1000,
+    "regulation": 1,
+    "phone": "0895 606 165"
+}
+
+### Update Property ###
+PUT {{baseUrl}}/api/properties/13 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "2- стаен, Център, 999лв",
+    "description": "Some description",
+    "price": 999,
+    "area": 1500,
+    "yard": 2000,
+    "regulation": 1,
+    "phone": "0895 606 333"
+}
+
+### Delete Property ###
+DELETE {{baseUrl}}/api/properties/3 HTTP/1.1
+content-type: application/json

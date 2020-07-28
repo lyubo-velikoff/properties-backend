@@ -1,0 +1,27 @@
+### Construction Type ###
+GET {{baseUrl}}/api/constructionTypes?page=0&size=10 HTTP/1.1
+content-type: application/json
+
+### Construction Type by ID ###
+GET {{baseUrl}}/api/constructionTypes/6 HTTP/1.1
+content-type: application/json
+
+### Add Construction Type ###
+POST {{baseUrl}}/api/constructionTypes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Construction Type name here"
+}
+
+### Update Construction Type ###
+PUT {{baseUrl}}/api/constructionTypes/6 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Construction Type name here updated"
+}
+
+### Delete Construction Type ###
+DELETE {{baseUrl}}/api/constructionTypes/6 HTTP/1.1
+content-type: application/json
