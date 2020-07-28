@@ -1,1 +1,47 @@
+{
+    "local": {
+        "dialect": "mariadb",
+        "define": {
+            "charset": "utf8",
+            "freezeTableName": true,
+            "dialectOptions": {
+                "collate": "utf8_general_ci"
+            }
+        }
+    },
+    "development": {
         "dialect": "mysql",
+        "define": {
+            "charset": "utf8",
+            "freezeTableName": true,
+            "dialectOptions": {
+                "collate": "utf8_general_ci"
+            }
+        }
+    },
+    "test": {
+        "dialect": "mariadb",
+        "logging": false,
+        "define": {
+            "charset": "utf8",
+            "freezeTableName": true,
+            "dialectOptions": {
+                "collate": "utf8_general_ci"
+            }
+        }
+    },
+    "production": {
+        "username": "admin",
+        "password": "3Sinjira",
+        "database": "avalon",
+        "host": "avalon.cvyaoeuf2naa.eu-west-2.rds.amazonaws.com",
+        "dialect": "mariadb",
+        "define": {
+            "charset": "utf8",
+            "freezeTableName": true,
+            "dialectOptions": {
+                "collate": "utf8_general_ci"
+            }
+        }
+    }
+}
