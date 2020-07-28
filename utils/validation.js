@@ -1,5 +1,4 @@
 const { validationResult } = require('express-validator')
-// can be reused by many routes
 
 const validate = validations => {
     return async (req, res, next) => {
