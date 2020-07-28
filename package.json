@@ -22,7 +22,8 @@
         "supertest": "^4.0.2"
     },
     "scripts": {
-        "start": "cross-env NODE_ENV=local nodemon server.js",
+        "start": "node server.js",
+        "local:start": "cross-env NODE_ENV=local nodemon server.js",
         "migrate": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:migrate",
         "migrate:reset": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:migrate:undo:all && npm run migrate",
         "seed": "cross-env NODE_ENV=local node_modules\\.bin\\sequelize-cli db:seed:all",
