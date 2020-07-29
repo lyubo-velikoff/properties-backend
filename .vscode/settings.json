@@ -1,21 +1,16 @@
 {
     "rest-client.environmentVariables": {
-
         "$shared": {
             "baseUrl": "http://localhost:3001",
         },
-
         "local": {
             "baseUrl": "http://localhost:3001",
         },
-
         "dev": {
-            "baseUrl": "http://localhost:3001",
+            "baseUrl": "http://propertiesbackend-env.eba-gzmbpnwu.eu-west-2.elasticbeanstalk.com",
         },
-
         "prod": {
             "baseUrl": "http://localhost:3001",
         }
-
     }
 }
