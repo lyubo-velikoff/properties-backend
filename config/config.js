@@ -1,4 +1,5 @@
 require('dotenv').config('../.env')
+console.log(`Getting config for ${process.env.NODE_ENV} with user ${process.env.DB_USERNAME}`)
 const { DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE } = process.env
 module.exports = {
     local: {
