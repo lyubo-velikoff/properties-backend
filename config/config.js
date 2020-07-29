@@ -18,9 +18,9 @@ module.exports = {
     },
     development: {
         username: DB_USERNAME,
-        password: 'DB_PASSWORD',
-        database: 'avalon',
-        host: 'avalon.cvyaoeuf2naa.eu-west-2.rds.amazonaws.com',
+        password: DB_PASSWORD,
+        database: DB_DATABASE,
+        host: DB_HOST,
         dialect: 'mysql',
         define: {
             charset: 'utf8',
