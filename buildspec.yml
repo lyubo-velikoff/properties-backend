@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Build started on `date`
       - npm test
-      - cross-env NODE_ENV=development npm run migrate
+      - npm run migrate
   post_build:
     commands:
       - echo Build completed on `date`
