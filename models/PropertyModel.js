@@ -46,7 +46,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         currencyId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -58,7 +57,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         countyId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -70,7 +68,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         regionId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -82,7 +79,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         neighborhoodId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -94,7 +90,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         floorId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -106,7 +101,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         floorCountId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -118,7 +112,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         constructionTypeId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -130,7 +123,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         detailId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {
@@ -142,7 +134,6 @@ module.exports = (sequelize, DataTypes) => {
         },
         detailPlotId: {
             type: DataTypes.INTEGER,
-            onUpdate: 'CASCADE',
             onDelete: 'SET NULL',
             references: {
                 model: {

@@ -36,7 +36,6 @@ module.exports = {
             },
             currencyId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -48,7 +47,6 @@ module.exports = {
             },
             countyId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -60,7 +58,6 @@ module.exports = {
             },
             regionId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -72,7 +69,6 @@ module.exports = {
             },
             neighborhoodId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -84,7 +80,6 @@ module.exports = {
             },
             floorId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -96,7 +91,6 @@ module.exports = {
             },
             floorCountId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -108,7 +102,6 @@ module.exports = {
             },
             constructionTypeId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -120,7 +113,6 @@ module.exports = {
             },
             detailId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
@@ -132,7 +124,6 @@ module.exports = {
             },
             detailPlotId: {
                 type: Sequelize.INTEGER,
-                onUpdate: 'CASCADE',
                 onDelete: 'SET NULL',
                 references: {
                     model: {
