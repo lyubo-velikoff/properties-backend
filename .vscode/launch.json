@@ -8,11 +8,7 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "name": "Launch Backend",
-            "program": "cross-env NODE_ENV=local ${workspaceFolder}\\backend\\server.js",
-            "env": {
-                "NODE_ENV": "local"
-            },
-            "envFile": "${workspaceFolder}\\backend\\.env",
+            "program": "${workspaceFolder}\\backend\\server.js",
             "request": "launch",
             "restart": true,
             "runtimeExecutable": "nodemon",
